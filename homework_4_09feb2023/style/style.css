@@ -10,11 +10,12 @@
     width: 300px;
     height: 300px;
     background-color: bisque;
-}
+    }
 
 .cubes {
     width: 200px;
     height: 200px;
+    
 }
 
 .red {
@@ -45,10 +46,11 @@
     position: absolute;
     top: 50%;
     right: 50%;
-    transform: translate(50%, -50%);
-    transition: 1s linear 0s;
+    /*transform: translate(50%, -50%);*/
+    transition: 2s ease-in-out;
     transform: rotate(-45deg);
-    
+   
 }
+    
 
 
