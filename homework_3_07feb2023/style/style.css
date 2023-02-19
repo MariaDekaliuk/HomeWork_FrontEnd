@@ -1,0 +1,162 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #FFFFFF;
+    font-family: 'Nunito';
+    font-style: normal;
+}
+
+.main {
+    font-family: 'Nunito';
+    display: flex; /*центрировать все элементы блока*/
+    justify-content: center;
+    align-items: center;
+    padding: 40px; /*отсутили от верха границ окна браузера*/
+    margin: 32px;
+}
+
+form {
+    width: 420px;
+    height: 426px;
+    padding: 40px 32px;
+    /*border: 2px solid rgb(114, 118, 117);*/
+    box-shadow: 0px 2px 8px rgba(40, 41, 61, 0.08), 0px 20px 32px rgba(96, 97, 112, 0.24);
+    border-radius: 20px;
+    font-family: 'Nunito', sans-serif;
+}
+
+h1 {
+    font-weight: normal; /* Нормальное начертание */
+    font-weight: 600;
+    font-size: 28px;
+}
+
+
+img {
+    position: relative;
+    left: 90%;
+}
+
+
+.form-content {
+    display: flex; /*все растянулись по центру*/
+    flex-direction: column; /*все стали столбиком*/
+    justify-content: center;
+    align-items: flex-start;
+    padding: 7px; /*отступ внутри от рамки блока*/
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    }
+
+
+
+.form-content>*:not(:last-child) { 
+    /*расстояние между чем-то, последний исключаем*/
+    margin-bottom: 16px;
+}
+
+
+
+input {
+    width: 100%;
+    background: #FFFFFF;
+    border: 1px solid #FFE44D;
+    padding: 8px;
+    border-radius: 5px; /*закруглили края полей ввода*/
+    /*для плавности добавить можно transition: all 0.5s linear 1s;*/
+  
+    color: #1A1A1A;
+
+}
+input::placeholder {
+    /*color: rgb(141, 7, 11);*/
+
+    font-style: normal;
+    font-weight: 400;
+
+}
+
+input:focus {  /*добавить тень при фокусе на инпуты*/
+    box-shadow: 5px 5px 7px black;
+    outline: none; /*убрали обводку инпута при наведении*/
+}
+
+input:hover {   
+     transform: scale(1.1); /*сделать увеличение интупа при наведении курсора*/
+}
+
+input:focus {
+    color: rgb(235, 179, 9);
+  } /*будет курсор при фокусированнии станет другого цвета*/
+
+.registration {
+    width: 356px;
+    height: 48px;
+    border-radius: 55px;
+    background-color: #FFE44D;
+    padding: 10px;
+    border: none;
+    transition: transform 0.5s ease-in-out 0s; 
+    /*плавность, transform важно задать также в hover*/
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.registration:hover {
+    width: 356px;
+    height: 48px;
+    border-radius: 55px;
+    background-color: #bdbd98;
+    padding: 10px;
+    border: none;
+    transition: transform 0.5s ease-in-out 0s; 
+    /*поведение плавности*/
+}
+
+.enter {
+    width: 356px;
+    height: 48px;
+    border-radius: 55px;
+    background-color: #FFFFFF;
+    padding: 10px;
+    border: 1px solid grey;
+    transition: transform 0.5s ease-in-out 0s; 
+    /*плавность, transform важно задать также в hover*/ 
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.enter:hover {
+    width: 356px;
+    height: 48px;
+    border-radius: 55px;
+    background-color: #bdbd98;
+    padding: 10px;
+    border: none;
+    transition: transform 0.5s ease-in-out 0s; 
+    /*поведение плавности*/
+}
+.agreement {
+
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    color: #7B8E98;
+}
+
+p {
+    font-weight: 200;
+    font-size: 12px;
+    line-height: 14px; 
+    color: #7B8E98;
+}
+
