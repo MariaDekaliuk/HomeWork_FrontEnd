@@ -1,38 +1,38 @@
-// console.log("_____________1______________")
-// console.log("Hello People!")
-// const numer = +prompt("Write a number. Let's find out 10% of this number: ")
-// console.log("10% of this numer is: " + numer * 0.1)
+console.log("_____________1______________")
+console.log("Hello People!")
+const numer = +prompt("Write a number. Let's find out 10% of this number: ")
+console.log("10% of this numer is: " + numer * 0.1)
 
 
-// console.log("_____________2______________")
-// const number1 = +prompt("Let's find the smallest number. Write number1: ")
-// const number2 = +prompt("Write number2: ")
-// if (number1 > number2) {
-//     console.log("This is the smallest number: " + number2)
-// } else if (number2 > number1) {
-//     console.log("This is the smallest number: " + number1)
-// } else(number2 === number1)
-// console.log("There is no smallest number. These numbers are equal")
+console.log("_____________2______________")
+const number1 = +prompt("Let's find the smallest number. Write number1: ")
+const number2 = +prompt("Write number2: ")
+if (number1 > number2) {
+    console.log("This is the smallest number: " + number2)
+} else if (number2 > number1) {
+    console.log("This is the smallest number: " + number1)
+} else(number2 === number1)
+console.log("There is no smallest number. These numbers are equal")
 
-// console.log("_____________3______________")
-// const number3 = +prompt("Введи число. Сравним его со 100: ")
-// if (number3 > 100) {
-//     console.log(`Число больше 100`)
-// } else if (number3 < 100) {
-//     console.log(`Число меньше 100`)
-// } else if (number3 === 100) {
-//     console.log(`Число равно 100`)
-// }
+console.log("_____________3______________")
+const number3 = +prompt("Введи число. Сравним его со 100: ")
+if (number3 > 100) {
+    console.log(`Число больше 100`)
+} else if (number3 < 100) {
+    console.log(`Число меньше 100`)
+} else if (number3 === 100) {
+    console.log(`Число равно 100`)
+}
 
-// console.log("_____________4______________")
-// const name = prompt("Write your name: ")
-// const age = +prompt("Write your age: ")
-// if (age >= 18) {
-//     console.log(`Hello! ${name}!`)
-// } else if (age < 18) {
-//     const ageMin = 18 - age;
-//     console.log(`Hi! ${name} see you in ${ageMin} years!`)
-// }
+console.log("_____________4______________")
+const name = prompt("Write your name: ")
+const age = +prompt("Write your age: ")
+if (age >= 18) {
+    console.log(`Hello! ${name}!`)
+} else if (age < 18) {
+    const ageMin = 18 - age;
+    console.log(`Hi! ${name} see you in ${ageMin} years!`)
+}
 
 
 
