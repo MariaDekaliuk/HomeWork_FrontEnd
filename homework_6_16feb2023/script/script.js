@@ -1,6 +1,7 @@
 console.log("_____________1______________")
 /*Напишите цикл for, который выводит консоль 
 каждое второе число от 0 до 10*/
+
 for (let i1 = 0; i1 <= 10; i1 = i1 + 2) {
 console.log(i1)}
 
@@ -8,6 +9,7 @@ console.log(i1)}
 console.log("_____________2______________")
 /*Напишите цикл for, который выводит в консоль  
 все числа от 55 до 20*/
+
 for (let i2 = 55; i2 >= 20; i2--) {
 console.log(i2)}
 
@@ -30,6 +32,7 @@ console.log("_____________4______________")
 /*Сформировать новый массив numberssquared 
 и передать в него все элементы из массива numbers, 
 возведенные в квадрат*/
+
 const numberssquared = []
 numberssquared.push(numbers[0] ** 2, numbers[1] ** 2, numbers[2] ** 2, 
     numbers[3] ** 2, numbers[4] ** 2, numbers[5] ** 2, numbers[6] ** 2)
