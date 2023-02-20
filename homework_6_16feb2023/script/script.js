@@ -51,6 +51,7 @@ const lestelem = numberssquared.pop(6)
 console.log(lestelem)
 
 
+
 console.log("_____________6______________")
 /*Дан объект user. Используя данные из объекта, 
 сформировать строку в формате: 
