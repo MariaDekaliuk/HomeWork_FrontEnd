@@ -1,14 +1,97 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HW9_28feb2023</title>
+	<meta charset="UTF-8">
+	<title>JavaScript задание</title>
+	<style>
+		.square {
+			width: 200px;
+			height: 200px;
+			background-color: red;
+		}
+	</style>
 </head>
 <body>
+	<h1>JavaScript задание</h1>
 
-    
-    
+	<!-- Задача 1 -->
+	<button onclick="changeSquareColorAndSize()">Изменить квадрат</button>
+	<div class="square" id="square"></div>
+
+	<!-- Задача 2 -->
+	<button onclick="changeSquareColor()">Изменить цвет</button>
+	<div class="square" id="square2" style="background-color: pink;"></div>
+
+	<!-- Задача 3 -->
+	<button onclick="changeSquareSize()">Изменить размер</button>
+	<div class="square" id="square3" style="width: 150px; height: 150px;"></div>
+
+	<!-- Задача 4 -->
+	<button onclick="createParagraph()">Создать параграф</button>
+	<div class="root" id="root"></div>
+
+	<!-- Задача 5 -->
+	<button onclick="createColoredParagraph()">Создать цветной параграф</button>
+	<div class="root" id="root2"></div>
+
+	<script>
+		// Задача 1
+		function changeSquareColorAndSize() {
+			var square = document.getElementById("square");
+			if (square.style.backgroundColor === "red") {
+				square.style.backgroundColor = "green";
+				square.style.width = "100px";
+				square.style.height = "100px";
+			} else {
+				square.style.backgroundColor = "red";
+				square.style.width = "200px";
+				square.style.height = "200px";
+			}
+		}
+
+		// Задача 2
+		function changeSquareColor() {
+			var square = document.getElementById("square2");
+			if (square.style.backgroundColor === "pink") {
+				square.style.backgroundColor = "blue";
+				console.log("Цвет квадрата изменен на синий.");
+			} else {
+				square.style.backgroundColor = "pink";
+			}
+		}
+
+		// Задача 3
+		function changeSquareSize() {
+			var square = document.getElementById("square3");
+			var currentWidth = square.clientWidth;
+			var currentHeight = square.clientHeight;
+			square.style.width = currentWidth + 20 + "px";
+			square.style.height = currentHeight + 20 + "px";
+		}
+
+		// Задача 4
+		function createParagraph() {
+			var root = document.getElementById("root");
+			var p = document.createElement("p");
+			p.style.color = "blue";
+			p.innerHTML = "Текст параграфа произвольный.";
+			root.appendChild(p);
+		}
+
+		// Задача 5
+		function createColoredParagraph() {
+			var root = document.getElementById("root2");
+			var p = document.createElement("p");
+			if (root.childNodes.length % 2 === 0) {
+				p.style.color = "blue";
+			} else {
+				p.style.color = "green";
+			}
+			root.appendChild(p);
+            
+		}
+	</script>
+
 </body>
+
 </html>
